@@ -60,10 +60,6 @@ export const deleteEstudante = (req, res) => {
 
     const estudante = list.excludeEstudantes(id);
 
-    if(!estudante) {
-        return res.status(404).send({ message: "Not found" });
-    }
-
     list.excludeEstudantes(id);
     return res.status(200).send({ message: `id: ${id} deletado com sucesso`, data: estudante });
 }
