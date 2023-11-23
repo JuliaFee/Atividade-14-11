@@ -1,5 +1,5 @@
 export const getAllCursos = (req, res) => {
-    return res.status(200).send({ message: "Todos os cursos via controller!", status:"OK" });
+    return res.status(200).send({ message: "OK", status:"OK" });
 };
 
 export const getCursoById = (req, res) => {

@@ -3,7 +3,7 @@ import { getAllEstudantes,
     getEstudantesById, 
     createEstudante, 
     updateEstudante, 
-    deleteEstudante } from "../controller/estudante.controller";
+    deleteEstudante } from "../controller/estudante.controller.js";
 
 const rotaEstudante = Router();
 rotaEstudante.get("/", getAllEstudantes);

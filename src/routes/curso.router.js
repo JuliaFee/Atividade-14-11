@@ -3,7 +3,7 @@ import { getAllCursos,
     getCursoById, 
     createCurso, 
     updateCurso, 
-    deleteCurso } from "../controller/curso.controller";
+    deleteCurso } from "../controller/curso.controller.js";
 
 const rotaCurso = Router();
 
