@@ -57,10 +57,6 @@ export const deleteCurso = (req, res) => {
 
     const cursos = list.excludecursos(id);
 
-    if(!cursos) {
-        return res.status(404).send({ message: "Not found" });
-    }
-
     list.excludecursos(id);
     return res.status(200).send({ message: `id: ${id} deletado com sucesso`, data: cursos });
 }
