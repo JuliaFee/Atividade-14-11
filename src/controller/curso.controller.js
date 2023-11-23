@@ -1,15 +1,9 @@
 export const getAllCursos = (req, res) => {
-    if(!nome || !descricao || !vagasLimite) {
-        return res.status(404).send({ message: "Nenhum curso foi registrado"});
-    }
     return res.status(200).send({ message: "OK", status:"OK" });
 };
 
 export const getCursoById = (req, res) => {
     const { id } = req.params;
-    if(!nome || !descricao || !vagasLimite) {
-        return res.status(404).send({ message: "Not Found"});
-    }
     return res.status(200).send({ message: `ID do curso: ${id}` });
     
 };
